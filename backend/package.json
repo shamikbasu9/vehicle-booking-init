@@ -59,12 +59,13 @@
     "@feathersjs/transport-commons": "^5.0.33",
     "compression": "^1.8.0",
     "mongodb": "^6.13.1",
+    "twilio": "^5.5.2",
     "winston": "^3.17.0"
   },
   "devDependencies": {
     "@feathersjs/cli": "5.0.33",
     "@feathersjs/rest-client": "^5.0.33",
-    "axios": "^1.7.9",
+    "axios": "^1.8.4",
     "cross-env": "^7.0.3",
     "mocha": "^11.1.0",
     "nodemon": "^3.1.9",

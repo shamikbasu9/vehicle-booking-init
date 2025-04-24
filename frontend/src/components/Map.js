@@ -1,7 +1,7 @@
 import mapboxgl from 'mapbox-gl';
 import { useEffect, useRef } from 'react';
 
-mapboxgl.accessToken = 'YOUR_MAPBOX_TOKEN'; // Replace with your Mapbox token
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2hhbWlrYmFzdTkiLCJhIjoiY2x1aTRkY3hkMDBsZTJqbXluNjY0b2t3byJ9.YISrseVtC7P9caWdNfglZQ'; // Replace with your Mapbox token
 
 export default function Map({ setLocation, currentLocation, label }) {
   const mapRef = useRef();

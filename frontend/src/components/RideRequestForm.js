@@ -32,7 +32,6 @@ export default function RideRequestForm() {
       // Send the ride request to the backend
       const response = await axios.post('/api/rides', rideRequest);
       console.log('Ride request created:', response.data);
-
       // Optionally, clear the form or show a success message
       setPickupLocation({ lat: '', lng: '' });
       setDropoffLocation({ lat: '', lng: '' });
@@ -45,7 +44,7 @@ export default function RideRequestForm() {
       setLoading(false);
     }
   };
-
+  console.log("I am inside RideRequestForm")
   return (
     <div>
       <h2>Request a Ride</h2>

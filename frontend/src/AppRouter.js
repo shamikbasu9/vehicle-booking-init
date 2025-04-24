@@ -1,18 +1,20 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DriverHomePage from './pages/DriverHomePage';
 import RideRequestPage from './pages/RideRequestPage';
 import RideHistoryPage from './pages/RideHistoryPage';
 import NotFoundPage from './pages/NotFoundPage';
+import WelcomeLogin from './pages/WelcomeLogin';
 
 export default function AppRouter() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={RideRequestPage} />
-        <Route path="/driver" component={DriverHomePage} />
-        <Route path="/history" component={RideHistoryPage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<WelcomeLogin />} />
+        <Route path="/home" element={<RideRequestPage />} />
+        <Route path="/driver" element={<DriverHomePage />} />
+        <Route path="/history" element={<RideHistoryPage />} />
+        <Route path="*" element={<NotFoundPage />} /> {/* wildcard for 404 */}
+      </Routes>
     </Router>
   );
 }

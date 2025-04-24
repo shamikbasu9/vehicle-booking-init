@@ -14,7 +14,8 @@ export const userSchema = {
     _id: ObjectIdSchema(),
     email: { type: 'string' },
     password: { type: 'string' },
-    googleId: { type: 'string' }
+    googleId: { type: 'string' },
+    role: {type: 'string'}
   }
 }
 export const userValidator = getValidator(userSchema, dataValidator)
